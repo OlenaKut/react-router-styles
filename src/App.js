@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout.js';
 import Home from './pages/Home.js';
 import About from './pages/About.js';
