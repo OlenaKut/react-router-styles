@@ -1,9 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 
+const Text = styled.h2`
+
+margin: 0 auto;
+color: orange;
+
+
+
+`;
 export default function Contacts() {
   return (
-    <div>
-      <h1>Contact me</h1>
-    </div>
+    <Text>
+      <h2>Contact me</h2>
+    </Text>
   );
 }
