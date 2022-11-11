@@ -18,6 +18,9 @@ const NavUnlisted = styled.ul`
     border: 2px green;
      color: white;
   text-shadow: 2px 2px 4px #000000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px gray;
+  padding: 10px;
   }
 
   .current {
