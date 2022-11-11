@@ -6,13 +6,16 @@ const NavUnlisted = styled.ul`
 
   display: flex;
   float: right;
+  margin: 10px;
 
 
   a {
     text-decoration: none;
+    margin: -10px;
   }
 
   li {
+
   text-align: center;
   color: green;
   margin: 0 0.8rem;
