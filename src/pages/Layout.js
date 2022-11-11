@@ -31,9 +31,31 @@ const NavUnlisted = styled.ul`
  }
 `;
 
+const links = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Contacts', path: '/contacts' },
+];
+
 function Layout() {
   return (
     <div>
+      <NavUnlisted>
+        {links.map((link, index) => (
+          <NavLink key={index} to={link.path} activeClassName="current" exact>
+            <li> {link.name}</li>
+          </NavLink>
+        ))}
+      </NavUnlisted>
+      <div>
+        <Outlet />
+      </div>
+    </div>
+  );
+}
+
+/*export default function Layout() {
+ <div>
       <NavUnlisted>
         <NavLink to="/" activeClassName="current" exact>
           <li>Home</li>
@@ -49,31 +71,6 @@ function Layout() {
         <Outlet />
       </div>
     </div>
-  );
-}
-
-/*export default function Layout() {
-  return (
-    <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/"> Home</Link>
-          </li>
-          <li>
-            {' '}
-            <Link to="/about"> About</Link>
-          </li>
-          <li>
-            {' '}
-            <Link to="/contacts">Contacts</Link>
-          </li>
-        </ul>
-        <hr />
-      </nav>
-      <Outlet />
-    </>
-  );
 }*/
 
 export default Layout;
