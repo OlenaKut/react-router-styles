@@ -37,9 +37,7 @@ function Layout() {
   return (
     <NavUnlisted>
       <NavLink to="/" activeClassName="current" exact>
-        <li>
-          <span>Home</span>
-        </li>
+        <li>Home</li>
       </NavLink>
       <NavLink to="/about" activeClassName="current" exact>
         <li>About</li>
