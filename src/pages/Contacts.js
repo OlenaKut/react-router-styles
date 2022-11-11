@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Text = styled.h2`
 
 color: orange;
-float: left;
 margin: 0.8rem;
 
 

@@ -44,8 +44,10 @@ function Layout() {
         <NavLink to="/contacts" activeClassName="current" exact>
           <li>Contacts</li>
         </NavLink>
-        <Outlet />
       </NavUnlisted>
+      <div>
+        <Outlet />
+      </div>
     </div>
   );
 }
