@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const Text = styled.h2`
 
-margin: 0 auto;
 color: orange;
-text-align: center;
+//float: left;
+margin: 0.8rem;
 
 
 `;
