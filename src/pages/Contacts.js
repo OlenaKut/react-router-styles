@@ -5,7 +5,7 @@ const Text = styled.h2`
 
 margin: 0 auto;
 color: orange;
-
+text-align: center;
 
 
 `;

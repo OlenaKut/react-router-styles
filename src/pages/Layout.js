@@ -6,28 +6,26 @@ const NavUnlisted = styled.ul`
 
   display: flex;
   float: right;
-  margin: 10px;
+
 
 
   a {
     text-decoration: none;
-    margin: -10px;
+    margin: -0.5em;
   }
 
   li {
-
   text-align: center;
   color: green;
   margin: 0 0.8rem;
   font-size: 1.3rem;
   position: relative;
   list-style: none;
-  border: 2px green;
   color: white;
-  text-shadow: 2px 2px 4px #000000;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px gray;
-  padding: 10px;
+  text-shadow: 0.1rem 0.1rem 0.2rem #000000;
+  border-radius:  0.4rem;
+  box-shadow:  0.1rem  0.1rem  0.6rem gray;
+  padding:  0.4rem;
   }
 
  }
@@ -35,18 +33,20 @@ const NavUnlisted = styled.ul`
 
 function Layout() {
   return (
-    <NavUnlisted>
-      <NavLink to="/" activeClassName="current" exact>
-        <li>Home</li>
-      </NavLink>
-      <NavLink to="/about" activeClassName="current" exact>
-        <li>About</li>
-      </NavLink>
-      <NavLink to="/contacts" activeClassName="current" exact>
-        <li>Contacts</li>
-        <Outlet />
-      </NavLink>
-    </NavUnlisted>
+    <div>
+      <NavUnlisted>
+        <NavLink to="/" activeClassName="current" exact>
+          <li>Home</li>
+        </NavLink>
+        <NavLink to="/about" activeClassName="current" exact>
+          <li>About</li>
+        </NavLink>
+        <NavLink to="/contacts" activeClassName="current" exact>
+          <li>Contacts</li>
+        </NavLink>
+      </NavUnlisted>
+      <Outlet />
+    </div>
   );
 }
 
